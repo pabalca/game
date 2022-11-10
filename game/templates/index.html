@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}All about you{% endblock %}
+
+{% block content %}
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start list-group-item-info">
+    <p class="mb-1">A) {{ questions[0].text }}</p>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start list-group-item-danger">
+    <p class="mb-1">B) {{ questions[1].text }}</p>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start list-group-item-warning">
+    <p class="mb-1">C) {{ questions[2].text }}</p>
+  </a>
+</div>
+
+{% endblock %}
